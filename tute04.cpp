@@ -27,3 +27,16 @@ int main() {
   std::cout << std::endl;
   return 0;
 }
+
+//fuction implementation
+long Factorial(int no){
+  if(no > 1)
+        return no * Factorial(no - 1);
+    else
+        return 1;
+}
+
+//fuction implementation
+long nCr(int n, int r){
+  return Factorial(n) / (Factorial(r) * Factorial(n - r));
+}
